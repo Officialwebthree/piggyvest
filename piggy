@@ -1,0 +1,111 @@
+import React from 'react';
+
+const sharedClasses = {
+  textZinc: 'text-zinc-600 dark:text-zinc-300',
+  textBlue: 'text-blue-500',
+  bgBlue: 'bg-blue-100 dark:bg-blue-900',
+  bgWhite: 'bg-white dark:bg-zinc-800',
+  rounded: 'rounded-lg',
+  flex: 'flex',
+  itemsCenter: 'items-center',
+  justifyBetween: 'justify-between',
+  justifyCenter: 'justify-center',
+  spaceX: 'space-x-4',
+  p4: 'p-4',
+  mb4: 'mb-4',
+  px2: 'px-2',
+  py1: 'py-1',
+  textXs: 'text-xs',
+  textSm: 'text-sm',
+  text3xl: 'text-3xl',
+  fontBold: 'font-bold',
+  minW: 'min-w-[200px]',
+  overflowX: 'overflow-x-auto',
+  borderT: 'border-t',
+  bottom0: 'bottom-0',
+  left0: 'left-0',
+  right0: 'right-0',
+};
+
+const SafeLock = () => {
+  return (
+    <div className={`min-h-screen bg-zinc-100 dark:bg-zinc-900 ${sharedClasses.p4}`}>
+      <div className={`${sharedClasses.flex} ${sharedClasses.itemsCenter} ${sharedClasses.justifyBetween} ${sharedClasses.mb4}`}>
+        <button className={sharedClasses.textZinc}>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <h1 className="text-xl font-semibold text-zinc-800 dark:text-zinc-200">SafeLock</h1>
+        <button className={sharedClasses.textZinc}>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </button>
+      </div>
+      <div className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.p4} text-white ${sharedClasses.mb4}`}>
+        <div className={`${sharedClasses.flex} ${sharedClasses.justifyBetween} ${sharedClasses.itemsCenter} ${sharedClasses.mb2}`}>
+          <span className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.px2} ${sharedClasses.py1} ${sharedClasses.textXs}`}>12% - 17% per annum</span>
+        </div>
+        <div className={sharedClasses.mb4}>
+          <p className={sharedClasses.textSm}>Safelock Balance</p>
+          <p className={`${sharedClasses.text3xl} ${sharedClasses.fontBold}`}>₦0</p>
+        </div>
+        <button className="bg-white text-blue-500 rounded-full px-4 py-2">Create a Safelock</button>
+      </div>
+      <div className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.p4} ${sharedClasses.mb4}`}>
+        <div className={`${sharedClasses.flex} ${sharedClasses.justifyBetween} ${sharedClasses.itemsCenter} ${sharedClasses.mb2}`}>
+          <h2 className="text-blue-700 dark:text-blue-300 font-semibold">What is Safelock?</h2>
+          <button className="text-blue-700 dark:text-blue-300">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <p className="text-blue-700 dark:text-blue-300 text-sm">SafeLock is a <span className={sharedClasses.fontBold}>cash lock</span> that helps you <span className={sharedClasses.fontBold}>prevent temptation</span> and earn upfront interests on your cash.</p>
+      </div>
+      <div className={sharedClasses.mb4}>
+        <div className={`${sharedClasses.flex} ${sharedClasses.justifyBetween} ${sharedClasses.itemsCenter} ${sharedClasses.mb2}`}>
+          <h2 className="text-zinc-800 dark:text-zinc-200 font-semibold">Recommendations</h2>
+          <button className={sharedClasses.textBlue}>More options</button>
+        </div>
+        <div className={`${sharedClasses.flex} ${sharedClasses.spaceX} ${sharedClasses.overflowX}`}>
+          <div className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.p4} ${sharedClasses.minW}`}>
+            <span className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.px2} ${sharedClasses.py1} ${sharedClasses.textXs} text-white`}>Earn ₦2,325</span>
+            <p className="text-blue-700 dark:text-blue-300 font-semibold mt-2">Lock ₦15,000</p>
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm">For 365 days</p>
+          </div>
+          <div className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.p4} ${sharedClasses.minW}`}>
+            <span className={`${sharedClasses.bgBlue} ${sharedClasses.rounded} ${sharedClasses.px2} ${sharedClasses.py1} ${sharedClasses.textXs} text-white`}>Earn ₦2,383.5</span>
+            <p className="text-blue-700 dark:text-blue-300 font-semibold mt-2">Lock ₦50,000</p>
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm">For 120 days</p>
+          </div>
+        </div>
+      </div>
+      <div className={`${sharedClasses.flex} ${sharedClasses.justifyBetween} ${sharedClasses.itemsCenter} mt-4}`}>
+        <button className={sharedClasses.textBlue}>Ongoing</button>
+        <button className="text-zinc-400">Paid Back</button>
+      </div>
+      <div className={`${sharedClasses.fixed} ${sharedClasses.bottom0} ${sharedClasses.left0} ${sharedClasses.right0} ${sharedClasses.bgWhite} ${sharedClasses.p4} ${sharedClasses.flex} ${sharedClasses.justifyBetween} ${sharedClasses.itemsCenter} ${sharedClasses.borderT} ${sharedClasses.borderZinc}`}>
+        <button className={`${sharedClasses.flex} ${sharedClasses.itemsCenter} ${sharedClasses.textZinc}`}>
+          <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6a1 1 0 001 1h3m-4 4h6a1 1 0 011 1v3m-10 0h4"></path>
+          </svg>
+          <span className={sharedClasses.textXs}>Home</span>
+        </button>
+        <button className={`${sharedClasses.flex} ${sharedClasses.itemsCenter} ${sharedClasses.textBlue}`}>
+          <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span className={sharedClasses.textXs}>Savings</span>
+        </button>
+        <button className={`${sharedClasses.flex} ${sharedClasses.itemsCenter} ${sharedClasses.textZinc}`}>
+          <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span className={sharedClasses.textXs}>Invest</span>
+        </button>
+        <button className={`${sharedClasses.flex} ${sharedClasses.itemsCenter} ${sharedClasses.textZinc}`}>
+          <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4.992 4.992 0 0112 15a4.992 4.992 0 016.879 2.804M12 7a4 4 0 110-8 4 4 0 010 8zm0 2a9 9 0 00-9 9v1h18v-1a9 9 0 00-9-9z"></path>
+         
